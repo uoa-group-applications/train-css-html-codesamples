@@ -1,0 +1,57 @@
+<html>
+
+	<body>
+
+		<!-- bad. -->
+
+		<form method="get" action="?">
+			<table width="100%">
+				<tr>
+					<td colspan="2">
+						<center>
+							<p>
+								<font size="18">
+									Fill out your name!
+								</font>
+							</p>
+						</center>
+					</td>
+				</tr>
+
+				<tr>
+					<td><strong>Name:</strong></td>
+					<td><input type="text" name="full-name" /></td>
+				</tr>
+			</table>
+		</form>
+
+		<hr/>
+
+		<!-- good -->
+
+		<form method="get" action="?">
+			<p class="intro">Fill out your name!</p>
+			<label for="full-name">Name:</label>
+			<input type="text" id="full-name" name="full-name" placeholder="Enter your full name" />
+		</form>
+
+		<style>
+			p.intro {
+				font-size: 48px;
+				text-align: center;
+			}
+
+			label {
+				float: left;
+				width: 200px;
+				font-weight: bold;
+			}
+
+			input[type='text'] {
+				margin-left: 210px;
+			}
+		</style>
+
+	</body>
+
+</html>
